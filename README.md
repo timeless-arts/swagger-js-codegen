@@ -1,14 +1,18 @@
 # Swagger to JS & Typescript Codegen
-[![Circle CI](https://circleci.com/gh/wcandillon/swagger-js-codegen.svg?style=svg)](https://circleci.com/gh/wcandillon/swagger-js-codegen) [![NPM version](http://img.shields.io/npm/v/swagger-js-codegen.svg?style=flat)](http://badge.fury.io/js/swagger-js-codegen)
+
+<mark>Fork Notice</mark>: The original module has been abandoned and many seem to have small issues and wishes. This is a clean fork of the original maintainer, patched up with _some_ of **mtennoe**/swagger-typescript-codegen changes. Additionally, it has been made a bit cleaner.
+
+Also, we required an by-path lookup. This will be able to resolve an given URL to the given entpoint method.
+<small>(it's just a map)</small>
 
 ## We are looking for a new maintainer
 
-This project is no longer actively maintained by its creator. Please let us know if you would like to become a maintainer.
-At the time we wrote this package, the swagger didn't have generators for JavaScript nor TypeScript. Now there are [great alternatives of this package available](https://github.com/swagger-api/swagger-codegen). 
+~~This project is no longer actively maintained by its creator. Please let us know if you would like to become a maintainer.
+At the time we wrote this package, the swagger didn't have generators for JavaScript nor TypeScript. Now there are [great alternatives of this package available](https://github.com/swagger-api/swagger-codegen). ~~
 
 This package generates a nodejs, reactjs or angularjs class from a [swagger specification file](https://github.com/wordnik/swagger-spec). The code is generated using [mustache templates](https://github.com/wcandillon/swagger-js-codegen/tree/master/templates) and is quality checked by [jshint](https://github.com/jshint/jshint/) and beautified by [js-beautify](https://github.com/beautify-web/js-beautify).
 
-The typescript generator is based on [superagent](https://github.com/visionmedia/superagent) and can be used for both nodejs and the browser via browserify/webpack.
+~~The typescript generator is based on [superagent](https://github.com/visionmedia/superagent) and can be used for both nodejs and the browser via browserify/webpack.~~
 
 ## Installation
 ```bash
@@ -225,4 +229,4 @@ eg: https://cloud.google.com/appengine/docs/go/requests#Go_Request_headers
 [There is a grunt task](https://github.com/wcandillon/grunt-swagger-js-codegen) that enables you to integrate the code generation in your development pipeline. This is extremely convenient if your application is using APIs which are documented/specified in the swagger format.
 
 ## Who is using it?
-[28.io](http://28.io) is using this project to generate their [nodejs](https://github.com/28msec/28.io-nodejs) and [angularjs language bindings](https://github.com/28msec/28.io-angularjs).
+[https://timelessarts.de](https://timelessarts.de) is using this project for their clients and internal framework.
